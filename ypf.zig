@@ -69,8 +69,8 @@ pub fn main() anyerror!void {
     // header
     const header = header: {
         const h = try slice.take(32);
-        if (std.mem.readIntLittle(u32, h[0..4]) != 0x00_46_50_59)
-            return error.NotYPF0; // 'Y', 'P', 'F', 0
+        if (!std.mem.eql(u8, h[0..4], .{ 'Y', 'P', 'F', 0 }))
+            return error.NotYPF0;
         break :header .{
             .version = std.mem.readIntLittle(u32, h[4..8]),
             .entries = std.mem.readIntLittle(u32, h[8..12]),
