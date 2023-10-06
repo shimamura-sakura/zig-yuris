@@ -5,3 +5,13 @@ zig-cp932
 *.obj
 *.pdb
 ypf
+samples
+yscm
+yscf
+yser
+yslb
+ystd
+ystl
+ystb
+ysvr
+yscd
