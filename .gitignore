@@ -1,4 +1,7 @@
 old-1
 zig-cp932
 *.o
+*.exe
+*.obj
+*.pdb
 ypf
