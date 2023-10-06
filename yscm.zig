@@ -60,7 +60,7 @@ pub fn main() anyerror!void {
     for (0..header.numCmds) |i| {
         const cmdname = try slice.zstr();
         const numAttr = (try slice.take(1))[0];
-        std.debug.print("{d:3}: {s} {d}\n", .{ i, cmdname, numAttr });
+        std.debug.print("0x{x:0>2}: {s} {d}\n", .{ i, cmdname, numAttr });
         for (0..numAttr) |j| {
             const attrName = try slice.zstr();
             const b2 = try slice.take(2);
