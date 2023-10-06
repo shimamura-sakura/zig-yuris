@@ -2,6 +2,10 @@
 
 Some programs for YU-RIS text game engine.
 
+## Dependency
+
+My `zig-cp932`
+
 ## Build
 
 ```shell
