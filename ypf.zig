@@ -77,7 +77,10 @@ pub fn main() anyerror!void {
         };
     };
     const fl_u64Offset = header.version >= 480;
-    const fl_hashField = header.version >= 473;
+    const fl_hashField = header.version >= 464;
+    // originally 473
+    // fix for １人殺すのも２人殺すのも同じことだと思うから which is 464.
+
     std.debug.print("YPF0 version {} entries {}\n", .{ header.version, header.entries });
 
     var path_buffer = std.ArrayList(u8).init(alloc);
