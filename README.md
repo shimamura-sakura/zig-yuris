@@ -14,4 +14,4 @@ My `zig-cp932`
 
 ## Usage
 
-ypf: `./ypf xxx.ypf output_dir`
+Run program without argument for help
